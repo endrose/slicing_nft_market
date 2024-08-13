@@ -4,15 +4,19 @@ import 'package:flutter/material.dart';
 
 class PageWidget extends StatelessWidget {
   final Widget child;
+  final Widget? bottomNavigationBar;
+
   const PageWidget({
     super.key,
     required this.child,
+    this.bottomNavigationBar,
   });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF6F9FC),
+      bottomNavigationBar: bottomNavigationBar,
       body: Stack(
         fit: StackFit.expand,
         children: [

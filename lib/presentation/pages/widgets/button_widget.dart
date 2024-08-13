@@ -9,11 +9,11 @@ class ButtonWidget extends StatelessWidget {
   final bool isFullWith;
 
   const ButtonWidget({
-    Key? key,
+    super.key,
     required this.name,
     required this.onPressed,
     this.isFullWith = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
